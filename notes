@@ -3,7 +3,7 @@ Complete 11 questions by adding the correct code and testing it.
 [x] Question 2 - function 'helloName' should log 'Hello, Ben!'
 [x] Question 3 - add 2 numbers, log result
 [x] Question 4 - multiply 3 numbers, log result
-[] Question 5
+[x] Question 5 - return true if number is positive, return false if less than or equal to 0
 [] Question 6
 [] Question 7
 [] Question 8
