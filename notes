@@ -4,8 +4,8 @@ Complete 11 questions by adding the correct code and testing it.
 [x] Question 3 - add 2 numbers, log result
 [x] Question 4 - multiply 3 numbers, log result
 [x] Question 5 - return true if number is positive, return false if less than or equal to 0
-[] Question 6
-[] Question 7
+[x] Question 6 - return last number in array if true, log undefined if false (I think I got this right)
+[x] Question 7 - use loop to determine if the value is in the array, all inside a function
 [] Question 8
 [] Question 9
 [] Question 10
