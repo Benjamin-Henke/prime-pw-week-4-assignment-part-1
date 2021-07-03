@@ -109,9 +109,9 @@ console.log('Should log true:', find(9, [3, 7, 9, 11]));
 // ----------------------
 // Stretch Goals
 // ----------------------
+
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-
 let string = [];
 function isFirstLetter(letter, string) {
   let i = 0;
@@ -122,22 +122,43 @@ function isFirstLetter(letter, string) {
       return false;
     } // end else statement
 } // end function 'isFirstLetter'
+// isFirstLetter will look for the index 0, which is the first index is the string apple.
+// if it matches, it will log true; if it doesn't match, it will log false.
 
 // Call the function to test
 console.log( 'isFirstLetter a - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter z - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
+function sumAll(array) {
+  let sum = 0;
   // TODO: loop to add items
-  return sum;
-}
+    for (let i=0; i<array.length; i++) {
+      sum += array[i];
+    } // end for loop
+    return sum;
+} // end function sumAll
+
+// Call the function to test
+console.log('The sum of array sumAll is:', sumAll([3, 5, 7, 9, 11, 13])); //Should log 48
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+function allPositiveNumbers (numbers) {
+  let positiveArray = [];
+    for (let i=0; i<numbers.length; i++) {
+      if (numbers[i] > 0) {
+        positiveArray.push(numbers[i]);
+      } // end if statement
+    } // end for loop
+    return console.log(positiveArray);
+} // end function 'allPositiveNumbers'
+
+// Call the function to test
+allPositiveNumbers([4, -5, 6, -7, 8, -9])
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
