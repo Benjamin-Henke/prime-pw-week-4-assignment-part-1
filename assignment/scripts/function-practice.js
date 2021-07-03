@@ -69,7 +69,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-let array = []
+let array = [];
 
 function getLast( array ) {
   console.log('in getLast');
@@ -94,7 +94,7 @@ console.log('Should log undefined, as I did not define array:', getLast());
 // if present, it will log true, if it is absent, it will log false.
 function find(value, array) {
   for (let i of array) {
-    if (i == value) {
+    if (i === value) {
       return true;
     } // end if condition
   } // end for of loop
@@ -111,11 +111,21 @@ console.log('Should log true:', find(9, [3, 7, 9, 11]));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
 
-}
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+let string = [];
+function isFirstLetter(letter, string) {
+  let i = 0;
+    if (string[i].includes(letter)){
+      return true;
+    } // end if statement
+    else {
+      return false;
+    } // end else statement
+} // end function 'isFirstLetter'
+
+// Call the function to test
+console.log( 'isFirstLetter a - should say true', isFirstLetter('a', 'apple') );
+console.log( 'isFirstLetter z - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
